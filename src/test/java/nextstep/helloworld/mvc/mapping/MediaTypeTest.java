@@ -45,7 +45,7 @@ public class MediaTypeTest {
     /**
      * MediaTypeController > showUser 메서드
      * MediaTypeController > userPage 메서드
-     *
+     * <p>
      * > produces 값으로 요청 구분하기
      * > APPLICATION_JSON_VALUE와 TEXT_HTML_VALUE 각각 처리하기
      */

@@ -48,6 +48,7 @@ public class ReturnValueTest {
     void responseBodyForUser() {
         RestAssured.given().log().all()
                 .accept(MediaType.APPLICATION_JSON_VALUE)
+//                .accept(MediaType.TEXT_HTML_VALUE)
                 .when().get("/return-value/users")
                 .then().log().all()
                 .statusCode(HttpStatus.OK.value())

@@ -43,7 +43,7 @@ public class ExceptionTest {
     @Test
     void controllerAdvice() {
         RestAssured.given().log().all()
-                .accept(MediaType.APPLICATION_JSON_VALUE)
+                .accept(MediaType.TEXT_HTML_VALUE)
                 .when().get("/exceptions/hi")
                 .then().log().all()
                 .statusCode(HttpStatus.BAD_REQUEST.value())
