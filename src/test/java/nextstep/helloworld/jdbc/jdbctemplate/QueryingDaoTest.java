@@ -45,7 +45,6 @@ public class QueryingDaoTest {
     @Test
     void getLastName() {
         String lastName = queryingDAO.getLastName(1L);
-
         assertThat(lastName).isEqualTo("Woo");
     }
 
